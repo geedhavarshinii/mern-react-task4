@@ -7,6 +7,7 @@ const Details=()=>{
   useEffect(() => {
     axios.get('https://dummyjson.com/users')
       .then(response => {
+        console.log(response)
         setUsers(response.data.users);
       })
       .catch(error => {
